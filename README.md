@@ -24,8 +24,11 @@ To handle missing values (`NaN`) in the `Cuisines` column based on the `City` co
 
 However, there are instances where a city has only one restaurant, making it impossible to determine the mode of `Cuisines`. To ensure that no restaurant data is lost in such cases, I will replace the missing `Cuisines` values with the placeholder `"Unknown"`. This approach allows us to retain the remaining data for those restaurants while maintaining data integrity.
 
+**Reducing memory**
+- I removed the Locality Verbose column as it is a concatenation of City and Locality, making it redundant. Keeping this column is unnecessary since its information can already be derived from existing columns.
+- I optimized the dataset by converting columns with an object data type to the category data type for those that have more than one unique value and six or fewer unique values. This conversion reduces memory usage and enhances processing efficiency while preserving the data's categorical nature.
+
 ---
 
-**Reducing memory**
-- I removed the `Locality Verbose` column because it's a Concatination of both `city` and `Locality`. it's Totaly unnecessary for keep this column.
-- I changed the `Object` Data type to `Category` for the columns with more than 1 unique value and less than or equal to 6 unique value.
+
+
