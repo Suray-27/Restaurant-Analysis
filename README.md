@@ -1,8 +1,9 @@
 # Restaurant-Analysis
+---
 
-📌 ## Purpose of the Study
+📌 ***Purpose of the Study***
 
-> This study aims to provide insights into customer preferences and factors influencing restaurant performance.
+<p> This study aims to provide insights into customer preferences and factors influencing restaurant performance.</p>
 
 🎯 ***Objectives of the Study***
 
@@ -11,14 +12,17 @@
 3. **Cuisines and Ratings:** Explore how different cuisines(`Single` or `Multiple`) influence restaurant ratings.
 4. **Popular Cuisines:** Identify the most popular cuisines based on customer preferences.
 5. **Cuisine Impact on Ratings:** Determine if any specific type of cuisine has a significant impact on the overall rating of restaurants.
+6. **Optimizing Predictive Models:** Evaluate and identify the best machine learning model for predicting restaurant ratings.
 
-📊 Key Performance Indicators (KPIs)
+📊 ***Key Performance Indicators (KPIs)***
 
 - Percentage of restaurants offering online delivery by price segment.  
 - Average ratings of restaurants with and without table booking facilities.  
 - Correlation coefficient between cuisines and restaurant ratings.  
 - Identify popular cuisines based on votes.  
 - Rating trends across specific cuisine types to determine their impact.
+
+---
 
 ***Necessary Libraries for this project***
 
@@ -164,14 +168,23 @@ However, there are instances where a city has only one restaurant, making it imp
 
 ---
 
-***Key Insights***
+📈 ***Key Insights***
 
 ---
 
-- `online delivery` seems to be less influenced by price segments and more by cities with `high populations`, `job opportunities`, and `urbanization`.
-- Restaurants with table booking facility have higher rating.
-- Offering `Multiple` Cuisines tends to increase rating of the restaurant.
-- `North Indian` Cuisine is more popular amoung customers.
-- `American` cuisines tend to increase restaurant rating
+- `Online delivery` appears to be influenced more by cities with `high populations`, `job opportunities`, and `urbanization`, rather than price segments.
+- Restaurants with a `table booking facility` consistently achieve higher customer ratings.
+- Offering `multiple cuisines` significantly enhances restaurant ratings.
+- `North Indian cuisine` emerges as the most popular choice among customers.
+- Including `American cuisine` contributes to improved restaurant ratings.
+
+---
+
+💡 ***Suggestions***
+
+---
+
+1. **Enhance Ratings Through Table Booking:** Implementing a table booking facility can significantly boost restaurant ratings and improve customer satisfaction.
+2. **Leverage Multiple Cuisine Options:** Restaurants should consider offering `multiple cuisine` options, ensuring that `North Indian` and `American cuisines` are included to achieve higher ratings and attract a broader audience.
 
 ---
