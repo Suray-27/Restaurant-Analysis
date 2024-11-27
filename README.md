@@ -78,7 +78,7 @@ However, there are instances where a city has only one restaurant, making it imp
 - `41%` of restaurants in the `price segment 2` provide online delivery.
 - The `price range 2` segment has `approximately 1,276 restaurants` offering online delivery, which is the highest among all segments.
 - The `price range 4` segment has fewer restaurants overall and also fewer offering online delivery. However, these online deliveries are in this segment are concentrated in `urbanized cities`.
-- Interestingly, `online delivery` seems to be less influenced by price segments and more by cities with `high populations`, `job opportunities`, and `urbanization`.
+
 
 > Only 5% Restaurants offer both `Table booking` and `online Delivery` facility.
 
@@ -98,7 +98,7 @@ However, there are instances where a city has only one restaurant, making it imp
 
 **Analysis based on `Single` and `Multiple` Cuisines offering restaurants**
 
-- T-test shows there is a difference between two groups.
+- T-test shows there is a difference between restaurants offering `Single` Cuisine and `Multiple` Cuisines.
 
 > Cohen's d test for practical significance.
 
@@ -115,8 +115,40 @@ However, there are instances where a city has only one restaurant, making it imp
 - T test shows there is a Difference between Restaurant with `American` Cuisine and non-american cuisine.
 - Cohen's d results shows that Restaurant with `American` Cuisine has more rating than Restaurant without American cuisine.
 
-**Key Note** <p>This `Aggregate rating` and `Votes` are not only based on cuisines it should be based on `Restaurant's ambience, services and many factors` so we need more information to get more accurate insight.</p>
+**Key Note** <p>This `Aggregate rating` and `Votes` are not only based on `Cuisines` it should be based on `Restaurant's ambience, services and many factors` so we need more information to get more accurate insight.</p>
 
+---
 
+***Machine Learning***
+
+---
+
+**Data Preprocessing**
+
+- Data Encoding (`Label Encoder`,`One Hot Encoder` and `Frequency encoding`) for Categorical Data.
+- Removed Unwanted and Non Encoded columns after being Encoded.
+- Scaling the Dataset by `Standardization` Technique.
+
+**Target Variable** is `Aggregate rating`.
+
+**Models**
+
+- Linear Regression Model
+- Random Forest Regression
+- Decision Tree Regression
+- k - Nearest Neighbors Regression
+
+**Model Comparision**
+
+>  `Random Forest Regression` has `low error` value compared to other models as well as good `r2` Value.For this Data `Random Forest Regression` is best model.
+
+---
+
+***Key Insights***
+
+---
+
+- `online delivery` seems to be less influenced by price segments and more by cities with `high populations`, `job opportunities`, and `urbanization`.
+- Restaurants offering table booking tend to have higher ratings compared to those without this facility
 
 ---
