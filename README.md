@@ -1,5 +1,25 @@
 # Restaurant-Analysis
 
+📌 Purpose of the Study
+
+> This study aims to provide insights into customer preferences and factors influencing restaurant performance.
+
+🎯 Objectives of the Study
+
+1. **Price Segments and Online Delivery:** Analyze whether online delivery services are more prevalent in the low-price segment or the high-price segment of restaurants.
+2. **Table Booking and Ratings:** Investigate whether restaurants offering table booking facilities tend to have higher customer ratings.
+3. **Cuisines and Ratings:** Explore how different cuisines(`Single` or `Multiple`) influence restaurant ratings.
+4. **Popular Cuisines:** Identify the most popular cuisines based on customer preferences.
+5. **Cuisine Impact on Ratings:** Determine if any specific type of cuisine has a significant impact on the overall rating of restaurants.
+
+📊 Key Performance Indicators (KPIs)
+
+- Percentage of restaurants offering online delivery by price segment.  
+- Average ratings of restaurants with and without table booking facilities.  
+- Correlation coefficient between cuisines and restaurant ratings.  
+- Identify popular cuisines based on votes.  
+- Rating trends across specific cuisine types to determine their impact.
+
 ***Necessary Libraries for this project***
 
 - `pandas` for Data Manipulation.
@@ -149,6 +169,9 @@ However, there are instances where a city has only one restaurant, making it imp
 ---
 
 - `online delivery` seems to be less influenced by price segments and more by cities with `high populations`, `job opportunities`, and `urbanization`.
-- Restaurants offering table booking tend to have higher ratings compared to those without this facility
+- Restaurants with table booking facility have higher rating.
+- Offering `Multiple` Cuisines tends to increase rating of the restaurant.
+- `North Indian` Cuisine is more popular amoung customers.
+- `American` cuisines tend to increase restaurant rating
 
 ---
