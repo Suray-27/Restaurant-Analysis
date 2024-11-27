@@ -1,10 +1,10 @@
 # Restaurant-Analysis
 
-📌 Purpose of the Study
+📌 ## Purpose of the Study
 
 > This study aims to provide insights into customer preferences and factors influencing restaurant performance.
 
-🎯 Objectives of the Study
+🎯 ***Objectives of the Study***
 
 1. **Price Segments and Online Delivery:** Analyze whether online delivery services are more prevalent in the low-price segment or the high-price segment of restaurants.
 2. **Table Booking and Ratings:** Investigate whether restaurants offering table booking facilities tend to have higher customer ratings.
