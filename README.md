@@ -66,4 +66,57 @@ However, there are instances where a city has only one restaurant, making it imp
 - Mughlai (9.5 %)
 - Italian (7.3 %)
 
+**Top 10 Cuisines by city with Highest Number of Restaurants**
+
+* This Chart clearly shows `North Indian` Cuisine is Famous in Restaurants at `New Delhi`.
+* In `New Delhi` apart from North Indian cuisine there are multiple Cuisines are Famous like `Chinese`,`Fast Food`,`Mughal`,`Bakery`,`South Indian`and `Street Food`.
+* The Cities got Placed in this `Top 10 Cuisines by City with the Highest Number of Restaurants` shows Every Cities are in `India`.
+
+**Online Delivery Availablity by Price Range**
+
+- A low proportion of restaurants in the high-price `(4)` segment offer online delivery.
+- `41%` of restaurants in the `price segment 2` provide online delivery.
+- The `price range 2` segment has `approximately 1,276 restaurants` offering online delivery, which is the highest among all segments.
+- The `price range 4` segment has fewer restaurants overall and also fewer offering online delivery. However, these online deliveries are in this segment are concentrated in `urbanized cities`.
+- Interestingly, `online delivery` seems to be less influenced by price segments and more by cities with `high populations`, `job opportunities`, and `urbanization`.
+
+> Only 5% Restaurants offer both `Table booking` and `online Delivery` facility.
+
+**Average ratings of restaurant based on table booking facility**
+
+> Restaurants offering table booking tend to have higher ratings compared to those without this facility
+
+**Correlation between `Has table booking` and `Aggregate rating`**
+
+<p> Restaurants offering table reservations receive higher customer ratings, but it is a very week relationship between those two variables so we need to consider some other factors to get valid insights.</p>
+
+**Correlation between Location and Aggregate rating**
+
+> There is no Correlation between location and Aggregate rating. So I use `geopy` library to find correlation by fixing reference points.
+
+<p>The heatmap suggests that there is very week negative correlation between "Aggregate rating" and "Distance to reference" but it says the restaurants near the reference point (Capital coordinates) Aggregate rating is increases, we need to consider some other factors to conclude better insights because of very week correlation between those two variables. </p>
+
+**Analysis based on `Single` and `Multiple` Cuisines offering restaurants**
+
+- T-test shows there is a difference between two groups.
+
+> Cohen's d test for practical significance.
+
+- Cohen's d results shows Restaurant with `Single` Cuisine has lower rating than Restaurant with `Mixed` Cuisines.
+
+**Top 10 Most popular cuisines by votes**
+
+- This Graph clearly shows combination of `North Indian and Mughal` Cuisines are most popular.
+- In specific `North Indian` Cuisines is more popular among the customers.
+
+> Is Restaurant offering `American` Cuisine particularly getting Higher rating based on Votes?
+
+- The above analysis shows `American` Cuisine is more repetitive than other cuisines.
+- T test shows there is a Difference between Restaurant with `American` Cuisine and non-american cuisine.
+- Cohen's d results shows that Restaurant with `American` Cuisine has more rating than Restaurant without American cuisine.
+
+**Key Note** <p>This `Aggregate rating` and `Votes` are not only based on cuisines it should be based on `Restaurant's ambience, services and many factors` so we need more information to get more accurate insight.</p>
+
+
+
 ---
