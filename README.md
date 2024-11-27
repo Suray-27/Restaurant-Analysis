@@ -4,7 +4,7 @@
 
 - `pandas` for Data Manipulation.
 - `numpy` for Numerical Computation.
-- `seaborn`,`matplotlib` for static charts and `plotly` for Geographic chart.
+- `seaborn`,`matplotlib` for Visualizations.
 - `geopy` for Geographic Analysis.
 - `scipy` for Statistical Analysis.
 - `scikit-learn` for Machine Learning.
@@ -30,5 +30,40 @@ However, there are instances where a city has only one restaurant, making it imp
 
 ---
 
+***EDA (Exploratory Data Analysis)***
 
+---
 
+**Distribution**
+
+- Votes is Right skewed data.
+- Aggregate rating has outlier, more number of 0 rating.
+
+**Number of Restaurants based on countries**
+
+> There are `15 countries` in this Dataset.
+
+<p> India have more number of Restaurants among all other Countries in the Dataset followed by US.</p>
+
+**Top 10 Cities with more number of Restaurants**
+
+- New Delhi (5473)
+- Gurgaon (1118)
+- Noida (1080)
+- Faridabad (251)
+- Ghaziabad (25)
+- Bhubaneshwar (21)
+- Lucknow (21)
+- Ahmedabad (21)
+- Amritsar (21)
+- Guwahati (21)
+
+**Top 5 Popular Cuisines**
+
+- North Indian (38 %)
+- Chinese (26.2 %)
+- Fast Food (19 %)
+- Mughlai (9.5 %)
+- Italian (7.3 %)
+
+---
