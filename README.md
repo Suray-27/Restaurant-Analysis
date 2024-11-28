@@ -49,8 +49,8 @@ To handle missing values (`NaN`) in the `Cuisines` column based on the `City` co
 However, there are instances where a city has only one restaurant, making it impossible to determine the mode of `Cuisines`. To ensure that no restaurant data is lost in such cases, I will replace the missing `Cuisines` values with the placeholder `"Unknown"`. This approach allows us to retain the remaining data for those restaurants while maintaining data integrity.
 
 **Reducing memory**
-- I removed the Locality Verbose column as it is a concatenation of City and Locality, making it redundant. Keeping this column is unnecessary since its information can already be derived from existing columns.
-- I optimized the dataset by converting columns with an object data type to the category data type for those that have more than one unique value and six or fewer unique values. This conversion reduces memory usage and enhances processing efficiency while preserving the data's categorical nature.
+- I removed the `Locality Verbose` column, as it is a concatenation of the `City` and `Locality` columns, making it redundant. Keeping this column was unnecessary since the same information can be derived from the existing columns.
+- I optimized the dataset by converting columns with an `object` data type to the `category` data type for those that have more than one unique value and six or fewer unique values. This conversion reduces memory usage and enhances processing efficiency while preserving the data's categorical nature.
 
 ---
 
@@ -67,7 +67,7 @@ However, there are instances where a city has only one restaurant, making it imp
 
 > There are `15 countries` in this Dataset.
 
-<p> India have more number of Restaurants among all other Countries in the Dataset followed by US.</p>
+<p> India has the highest number of restaurants in the dataset, followed by the United States.</p>
 
 **Top 10 Cities with more number of Restaurants**
 
@@ -92,19 +92,19 @@ However, there are instances where a city has only one restaurant, making it imp
 
 **Top 10 Cuisines by city with Highest Number of Restaurants**
 
-* This Chart clearly shows `North Indian` Cuisine is Famous in Restaurants at `New Delhi`.
-* In `New Delhi` apart from North Indian cuisine there are multiple Cuisines are Famous like `Chinese`,`Fast Food`,`Mughal`,`Bakery`,`South Indian`and `Street Food`.
-* The Cities got Placed in this `Top 10 Cuisines by City with the Highest Number of Restaurants` shows Every Cities are in `India`.
+* This chart clearly shows that `North Indian cuisine` is particularly popular in restaurants in `New Delhi`.
+* In `New Delhi`, apart from `North Indian cuisine`, other popular cuisines include `Chinese`, `Fast Food`, `Mughal`, `Bakery`, `South Indian`, and `Street Food`.
+* The Cities featuredin the `Top 10 Cuisines by City with the Highest Number of Restaurants` are all located in `India`.
 
 **Online Delivery Availablity by Price Range**
 
-- A low proportion of restaurants in the high-price `(4)` segment offer online delivery.
+- A low proportion of restaurants in the `high-price (4)` segment offer online delivery.
 - `41%` of restaurants in the `price segment 2` provide online delivery.
-- The `price range 2` segment has `approximately 1,276 restaurants` offering online delivery, which is the highest among all segments.
-- The `price range 4` segment has fewer restaurants overall and also fewer offering online delivery. However, these online deliveries are in this segment are concentrated in `urbanized cities`.
+- The `price segment 2` has approximately `1,276 restaurants` offering online delivery, which is the highest among all price segments.
+- The `price segment 4` has fewer restaurants overall, and even fewer offering online delivery. However, the online deliveries in this segment are concentrated in `urbanized cities`.
 
 
-> Only 5% Restaurants offer both `Table booking` and `online Delivery` facility.
+> Only `5%` of restaurants offer both `table booking` and `online delivery` facilities.
 
 **Average ratings of restaurant based on table booking facility**
 
@@ -112,16 +112,14 @@ However, there are instances where a city has only one restaurant, making it imp
 
 **Correlation between `Has table booking` and `Aggregate rating`**
 
-- Restaurants offering `table reservations` tend to receive `higher customer ratings`.
-- However, the relationship between these two variables is `very weak`, suggesting that other factors should be considered to draw more reliable insights.
+- `Restaurants offering table reservations` tend to receive `higher customer ratings`.
+- However, the relationship between these two variables is `very weak`, indicating that additional factors should be considered to derive more reliable insights.
 
 
 **Correlation between Location and Aggregate rating**
 
 - Initially, there was no correlation found between location and aggregate rating.
 - To address this, I utilized the `geopy` library to `fix reference points` and explore potential correlations more effectively.
-
-
 - The heatmap suggests a `very weak negative correlation` between `Aggregate rating` and `Distance to reference`.
 - It shows that restaurants closer to the reference point (capital coordinates) tend to have higher aggregate ratings.
 - However, due to the weak correlation between these two variables, we need to consider additional factors to draw more reliable insights.
