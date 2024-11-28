@@ -108,36 +108,43 @@ However, there are instances where a city has only one restaurant, making it imp
 
 **Average ratings of restaurant based on table booking facility**
 
-> Restaurants offering table booking tend to have higher ratings compared to those without this facility
+> `Restaurants offering table booking` tend to have `higher ratings` compared to those that do not provide this facility.
 
 **Correlation between `Has table booking` and `Aggregate rating`**
 
-<p> Restaurants offering table reservations receive higher customer ratings, but it is a very week relationship between those two variables so we need to consider some other factors to get valid insights.</p>
+- Restaurants offering `table reservations` tend to receive `higher customer ratings`.
+- However, the relationship between these two variables is `very weak`, suggesting that other factors should be considered to draw more reliable insights.
+
 
 **Correlation between Location and Aggregate rating**
 
-> There is no Correlation between location and Aggregate rating. So I use `geopy` library to find correlation by fixing reference points.
+- Initially, there was no correlation found between location and aggregate rating.
+- To address this, I utilized the `geopy` library to `fix reference points` and explore potential correlations more effectively.
 
-<p>The heatmap suggests that there is very week negative correlation between "Aggregate rating" and "Distance to reference" but it says the restaurants near the reference point (Capital coordinates) Aggregate rating is increases, we need to consider some other factors to conclude better insights because of very week correlation between those two variables. </p>
+
+- The heatmap suggests a `very weak negative correlation` between `Aggregate rating` and `Distance to reference`.
+- It shows that restaurants closer to the reference point (capital coordinates) tend to have higher aggregate ratings.
+- However, due to the weak correlation between these two variables, we need to consider additional factors to draw more reliable insights.
 
 **Analysis based on `Single` and `Multiple` Cuisines offering restaurants**
-
-- T-test shows there is a difference between restaurants offering `Single` Cuisine and `Multiple` Cuisines.
+`
+- The `t-test` reveals a significant difference between restaurants offering `single cuisine` and those offering `multiple cuisines`.
 
 > Cohen's d test for practical significance.
 
-- Cohen's d results shows Restaurant with `Single` Cuisine has lower rating than Restaurant with `Mixed` Cuisines.
+- The `Cohen's d` analysis indicates that restaurants offering `single cuisine` tend to have `lower ratings` compared to those offering `mixed cuisines`.
+
 
 **Top 10 Most popular cuisines by votes**
 
-- This Graph clearly shows combination of `North Indian and Mughal` Cuisines are most popular.
-- In specific `North Indian` Cuisines is more popular among the customers.
+- The graph clearly illustrates that the combination of `North Indian` and `Mughal cuisines` is the most popular among customers.
+- Specifically, `North Indian cuisine` stands out as the top choice for customers.
 
-> Is Restaurant offering `American` Cuisine particularly getting Higher rating based on Votes?
+> Does offering `American cuisine` lead to `higher ratings` based on customer votes?
 
-- The above analysis shows `American` Cuisine is more repetitive than other cuisines.
-- T test shows there is a Difference between Restaurant with `American` Cuisine and non-american cuisine.
-- Cohen's d results shows that Restaurant with `American` Cuisine has more rating than Restaurant without American cuisine.
+- The analysis indicates that `American cuisine` is more frequently offered compared to other cuisines.
+- A `t-test` reveals a significant difference in ratings between restaurants offering American cuisine and those that do not.
+- The `Cohen's d` results confirm that restaurants with `American cuisine` have higher ratings than those without it.
 
 **Key Note** <p>This `Aggregate rating` and `Votes` are not only based on `Cuisines` it should be based on `Restaurant's ambience, services and many factors` so we need more information to get more accurate insight.</p>
 
@@ -164,7 +171,8 @@ However, there are instances where a city has only one restaurant, making it imp
 
 **Model Comparision**
 
->  `Random Forest Regression` has `low error` value compared to other models as well as good `r2` Value.For this Data `Random Forest Regression` is best model.
+* `Random Forest Regression` outperforms other models with a `low error value` and a strong `R² value`.
+* Based on the analysis, `Random Forest Regression` is identified as the `best model` for this dataset.
 
 ---
 
@@ -186,5 +194,14 @@ However, there are instances where a city has only one restaurant, making it imp
 
 1. **Enhance Ratings Through Table Booking:** Implementing a table booking facility can significantly boost restaurant ratings and improve customer satisfaction.
 2. **Leverage Multiple Cuisine Options:** Restaurants should consider offering `multiple cuisine` options, ensuring that `North Indian` and `American cuisines` are included to achieve higher ratings and attract a broader audience.
+
+---
+
+🔍 ***Further Directions***
+
+---
+
+- Develop a comprehensive project focused exclusively on `cuisine types` to identify and tailor the best cuisine varieties for different customer preferences.
+- Incorporate `feature selection` methods in the modeling process to enhance predictive accuracy and uncover the most significant factors influencing restaurant ratings.
 
 ---
