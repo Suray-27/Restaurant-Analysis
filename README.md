@@ -1,4 +1,4 @@
-# Restaurant-Analysis
+# Restaurant-Analytics
 
 📌 ***Purpose of the Study***
 
